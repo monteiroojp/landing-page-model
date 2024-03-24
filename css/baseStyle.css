@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*Geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #333333;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+div.destinos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+div.destinos-card{
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+}
+
+img{
+    width: 20px;
+}
