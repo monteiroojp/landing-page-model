@@ -1,4 +1,4 @@
-@media screen and (min-width:0px) and (max-width:600px){
+@media screen and (min-width:600px) and (max-width:768px){
 
     ::-webkit-scrollbar{
         height: 0px;
@@ -6,6 +6,7 @@
     }
 
     /*Geral*/
+
     h2{
         font-size: 1.5em;
     }
@@ -13,19 +14,19 @@
     /*Header*/
     header div.header{
         justify-content: space-between;
-        padding: 0px 10px;     
+        padding: 0px 20px;     
     }
 
     div.header img{
-        width: 60px;
+        width: 80px;                                                                
     }
 
     div.header nav > ul > li{
-        margin: 5px;
+        margin: 8px;
     }
 
     div.header nav > ul > li > a{
-        font-size: 1em;
+        font-size: 1.05em;
     }
 
     header h1{
@@ -39,7 +40,7 @@
     button.site-button{
         height: 50px;
         width: 200px;
-        font-size: 0.9em;
+        font-size: 1em;
     } 
 
     div.slider-buttons{
@@ -81,10 +82,9 @@
     }
 
     div.pacotes{
-        gap: 30px;
+        gap: 40px;
         margin-top: 40px;
     }
-
 
     div.pacotes-card{
         width: 300px;
@@ -117,7 +117,7 @@
         margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 20px;
-        font-size: 9px;
+        font-size: 10px;
     }
 
 
