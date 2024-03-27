@@ -1,0 +1,17 @@
+// Seleciona o botão "back to top"
+const backToTopButton = document.getElementById('backToTopButton');
+const header = document.querySelector('header')
+
+// Adiciona um evento de clique ao botão "back to top"
+backToTopButton.addEventListener('click', () =>{
+    header.scrollIntoView({behavior:'smooth'})
+});
+
+// Mostra o botão "back to top" quando o usuário rolar a página para baixo
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('showButton');
+    } else {
+        backToTopButton.classList.remove('showButton');
+    }
+});

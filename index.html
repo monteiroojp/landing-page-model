@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="css/baseStyle.css">
+    <link rel="stylesheet" href="css/smallMobiles.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/largeTablets-and-miniDesktops.css">
@@ -16,7 +17,12 @@
     <!--Scripts-->
     <script src="scripts/slidershow.js" defer></script>
     <script src="scripts/scrollEffect.js" defer></script>
-    <title>Landing Page</title>
+    <script src="scripts/scrollButtons.js"> defer</script>
+    <script src="backtoToTopButton" defer></script>
+    <script src="emailButton.js" defer></script>
+    <!--Site settings-->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Landing Page Exemplo</title>
 </head>
 <body>
     <header>
@@ -24,15 +30,14 @@
             <img src="imagens/logowhite.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Pacotes</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li ><a href="#" id="destinosButton">Destinos</a></li>
+                    <li><a href="#" id="pacotesButton">Pacotes</a></li>
+                    <li><a href="#" id="contatosButton">Contatos</a></li>
                 </ul>
             </nav>
         </div>
         <h1>Sinta a emoção de explorar o mundo, enquanto nós cuidamos dos detalhes.</h1>
-        <button class="site-button">Ver pacotes!</button>
+        <button class="site-button" id="headerButton">Ver pacotes!</button>
         <div class="slider-buttons">
             <button id="previous-button"><span class="material-symbols-outlined">arrow_back</span></button>
             <button id="next-button"><span class="material-symbols-outlined">arrow_forward</span></button>
@@ -67,14 +72,6 @@
                     <img src="imagens/paris.jpeg" alt="paris">
                     <h3>Paris</h3>
                 </div>
-                <div class="destinos-card">
-                    <img src="imagens/phukdg.jpg" alt="phuket">
-                    <h3>Phuket</h3>
-                </div>
-                <div class="destinos-card">
-                    <img src="imagens/seattle.jpg" alt="seattle">
-                    <h3>Seattle</h3>
-                </div>
             </div>
         </section>
         <section id="pacotes" class="hidden">
@@ -82,7 +79,7 @@
             <span class="material-symbols-outlined"> shopping_bag</span>
             <div class="pacotes">
                 <div class="pacotes-card">
-                    <img src="imagens/porto_seguro.png" alt="porto-seguro">
+                    <img src="imagens/porto-seguro.jpg" alt="porto-seguro">
                     <div class="text-card">
                         <h3>Porto Seguro</h3>
                         <p class="pacote-time">Duração: 7 Dias</p>
@@ -134,9 +131,9 @@
             <h2>Contatos</h2>
             <div class="form-container">
                 <h3>Email</h3>
-                <form action="#">
-                    <input type="email" name="#" id="inputEmail" placeholder="Insira seu email para receber novidades!" required>
-                    <input type="submit" value="Enviar" class="form-button">
+                <form action="#" id="form-mail">
+                    <input type="text" name="#" id="inputEmail" placeholder="Insira seu email para receber novidades!" required>
+                    <input type="submit" value="Enviar" class="form-button" id="sendButton">
                 </form>          
             </div>
             <div class="redes-sociais">
@@ -170,10 +167,12 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <p>Desenvolvido por <a href="#">@monteiroojp</a></p>
-        </footer>
     </main>
-    
+    <footer>
+        <p>Desenvolvido por <a href="#">@monteiroojp</a></p>
+    </footer>
+    <button id="backToTopButton" title="Back to Top"><span class="material-symbols-outlined">
+        expand_less
+        </span></button>
 </body>
 </html>

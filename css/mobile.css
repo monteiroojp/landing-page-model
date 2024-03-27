@@ -1,4 +1,4 @@
-@media screen and (min-width:0px) and (max-width:600px){
+@media screen and (min-width:400px) and (max-width:600px){
 
     ::-webkit-scrollbar{
         height: 0px;
@@ -29,7 +29,7 @@
     }
 
     header h1{
-        top: 30%;
+        top: 38%;
         left: 10%;
         width: 80%;
 
@@ -44,7 +44,7 @@
 
     div.slider-buttons{
         position: absolute;
-        top: 73%;
+        top: 75%;
         left: 2%;
     }
 
@@ -189,6 +189,11 @@
         font-size: 0.8em;
         padding: 0.3rem;
      }
+
+     /*Back to top button*/
+    #backToTopButton{
+        right: 2px;
+    }
 }
 
     
